@@ -82,8 +82,10 @@
           <a href="/guide/" class="nav-link">Guide per i pazienti</a>
         </nav>
         <div class="header-cta">
-          <a href="/prenota/" class="btn btn--primary btn--sm">Prenota la visita</a>
-          <span class="header-cta__label">Disponibile anche online</span>
+          <a href="tel:+39 339 1565344" class="btn btn--primary btn--sm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.93 3.26 2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +39 339 1565344
+          </a>
         </div>
         <button class="hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="mobile-nav" type="button">
           <span class="hamburger__line" aria-hidden="true"></span>
@@ -267,9 +269,9 @@
           <h2 id="diagnostica-heading">Come si fa la diagnosi</h2>
         </header>
 
-        <div class="diag-layout">
+        <div class="spec-diag-layout">
 
-          <div class="diag-layout__main">
+          <div class="spec-diag-layout__text">
             <p style="color:var(--color-text-muted); margin-bottom:var(--space-8); line-height:var(--leading-relaxed);">
               La diagnosi di allergia al nichel da contatto si fa con il patch test &mdash; l&rsquo;unico test validato scientificamente per questo tipo di allergia. La SNAS richiede invece una valutazione clinica pi&ugrave; articolata, che include anamnesi dettagliata, dieta di esclusione e rivalutazione.
             </p>
@@ -277,34 +279,33 @@
               I test IgE per il nichel non sono diagnostici per la SNAS e non vengono utilizzati a questo scopo.
             </p>
 
-            <ol class="steps-list steps-list--3" role="list">
-              <li class="steps-list__item" data-fade>
-                <span class="steps-list__num" aria-hidden="true">01</span>
-                <div class="steps-list__body">
-                  <h3 class="steps-list__title">Valutazione clinica</h3>
-                  <p class="steps-list__text">Anamnesi dettagliata: dove compaiono i sintomi, in quali contesti, correlazione con l&rsquo;alimentazione. Fondamentale per distinguere le due forme.</p>
+            <div class="steps-list">
+              <div class="step" data-fade>
+                <span class="step__number" aria-hidden="true">1</span>
+                <div class="">
+                  <h3 class="step__title">Valutazione clinica</h3>
+                  <p class="step__text">Anamnesi dettagliata: dove compaiono i sintomi, in quali contesti, correlazione con l&rsquo;alimentazione. Fondamentale per distinguere le due forme.</p>
                 </div>
-              </li>
-              <li class="steps-list__item" data-fade>
-                <span class="steps-list__num" aria-hidden="true">02</span>
-                <div class="steps-list__body">
-                  <h3 class="steps-list__title">Patch test</h3>
-                  <p class="steps-list__text">Applicazione di cerotti con nichel e altri metalli sulla schiena. Prima lettura a 48 ore, seconda lettura a 72&ndash;96 ore. Eseguito e letto nello stesso studio.</p>
+              </div>
+              <div class="step" data-fade>
+                <span class="step__number" aria-hidden="true">2</span>
+                <div class="">
+                  <h3 class="step__title">Patch test</h3>
+                  <p class="step__text">Applicazione di cerotti con nichel e altri metalli sulla schiena. Prima lettura a 48 ore, seconda lettura a 72&ndash;96 ore. Eseguito e letto nello stesso studio.</p>
                 </div>
-              </li>
-              <li class="steps-list__item" data-fade>
-                <span class="steps-list__num" aria-hidden="true">03</span>
-                <div class="steps-list__body">
-                  <h3 class="steps-list__title">Diagnosi e gestione</h3>
-                  <p class="steps-list__text">Per l&rsquo;allergia da contatto: indicazioni su cosa evitare. Per la SNAS: dieta a basso contenuto di nichel e piano di follow-up. In entrambi i casi, una diagnosi scritta e comprensibile.</p>
+              </div>
+              <div class="step" data-fade>
+                <span class="step__number" aria-hidden="true">3</span>
+                <div class="">
+                  <h3 class="step__title">Diagnosi e gestione</h3>
+                  <p class="step__text">Per l&rsquo;allergia da contatto: indicazioni su cosa evitare. Per la SNAS: dieta a basso contenuto di nichel e piano di follow-up. In entrambi i casi, una diagnosi scritta e comprensibile.</p>
                 </div>
-              </li>
-            </ol>
+              </div>
+            </div>
           </div>
 
-          <div class="diag-layout__table">
-            <div class="spec-table-wrap">
-              <table class="spec-table">
+          <div class="spec-diag-layout__table">
+            <table class="spec-table">
                 <thead>
                   <tr>
                     <th scope="col">Test</th>
@@ -339,8 +340,7 @@
                     <td>Sotto supervisione specialistica</td>
                   </tr>
                 </tbody>
-              </table>
-            </div>
+            </table>
           </div>
 
         </div>
@@ -354,7 +354,7 @@
       <div class="container">
         <div class="faq-layout">
 
-          <div class="faq-layout__intro">
+          <div class="faq-intro">
             <p class="section-label">Domande frequenti</p>
             <h2 id="faq-heading">Domande sull&rsquo;allergia al nichel</h2>
             <p style="color:var(--color-text-muted); margin-top:var(--space-4); line-height:var(--leading-relaxed);">
@@ -362,7 +362,7 @@
             </p>
           </div>
 
-          <div class="faq-accordion">
+          <div class="faq-list">
 
             <div class="faq-item">
               <button class="faq-question" aria-expanded="false" type="button">
@@ -510,25 +510,25 @@
         <div class="services-grid">
 
           <a href="/specializzazioni/patch-test-dermatite-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Patch Test &mdash; Dermatite</h3>
-              <p class="service-card__text">Diagnosi della dermatite allergica da contatto con patch test standard europeo. Lettura a 48h e 72h per un referto completo.</p>
+              <p class="service-card__desc">Diagnosi della dermatite allergica da contatto con patch test standard europeo. Lettura a 48h e 72h per un referto completo.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
 
           <a href="/specializzazioni/test-allergie-alimentari-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Test allergie alimentari</h3>
-              <p class="service-card__text">Prick test, diagnostica molecolare e patch test alimentare per identificare allergie a cibi specifici. Diagnosi completa in un&rsquo;unica seduta.</p>
+              <p class="service-card__desc">Prick test, diagnostica molecolare e patch test alimentare per identificare allergie a cibi specifici. Diagnosi completa in un&rsquo;unica seduta.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
 
           <a href="/specializzazioni/allergie-bambini-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Allergie nei bambini</h3>
-              <p class="service-card__text">Diagnosi e gestione delle allergie in et&agrave; pediatrica. Prick test e piano terapeutico su misura per i pi&ugrave; piccoli.</p>
+              <p class="service-card__desc">Diagnosi e gestione delle allergie in et&agrave; pediatrica. Prick test e piano terapeutico su misura per i pi&ugrave; piccoli.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>

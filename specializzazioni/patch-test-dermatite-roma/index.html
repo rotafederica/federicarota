@@ -82,8 +82,10 @@
           <a href="/guide/" class="nav-link">Guide per i pazienti</a>
         </nav>
         <div class="header-cta">
-          <a href="/prenota/" class="btn btn--primary btn--sm">Prenota la visita</a>
-          <span class="header-cta__label">Disponibile anche online</span>
+          <a href="tel:+39 339 1565344" class="btn btn--primary btn--sm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.93 3.26 2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +39 339 1565344
+          </a>
         </div>
         <button class="hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="mobile-nav" type="button">
           <span class="hamburger__line" aria-hidden="true"></span>
@@ -297,36 +299,36 @@
           Il patch test richiede pi&ugrave; accessi ambulatoriali in giorni diversi. Ecco come funziona nel dettaglio.
         </p>
 
-        <ol class="steps-list" role="list">
-          <li class="steps-list__item" data-fade>
-            <span class="steps-list__num" aria-hidden="true">01</span>
-            <div class="steps-list__body">
-              <h3 class="steps-list__title">Prima visita e applicazione</h3>
-              <p class="steps-list__text">Raccogliamo la storia clinica e applichiamo i cerotti sulla schiena. I cerotti contengono gli allergeni da testare, gi&agrave; in concentrazione standardizzata. Durata: circa 30 minuti.</p>
+        <div class="steps-list">
+          <div class="step" data-fade>
+            <span class="step__number" aria-hidden="true">1</span>
+            <div class="">
+              <h3 class="step__title">Prima visita e applicazione</h3>
+              <p class="step__text">Raccogliamo la storia clinica e applichiamo i cerotti sulla schiena. I cerotti contengono gli allergeni da testare, gi&agrave; in concentrazione standardizzata. Durata: circa 30 minuti.</p>
             </div>
-          </li>
-          <li class="steps-list__item" data-fade>
-            <span class="steps-list__num" aria-hidden="true">02</span>
-            <div class="steps-list__body">
-              <h3 class="steps-list__title">Rimozione a 48 ore</h3>
-              <p class="steps-list__text">Dopo 48 ore i cerotti vengono rimossi in studio. Prima lettura delle reazioni. La schiena deve rimanere asciutta durante questo periodo &mdash; nessuna doccia o attivit&agrave; fisica intensa.</p>
+          </div>
+          <div class="step" data-fade>
+            <span class="step__number" aria-hidden="true">2</span>
+            <div class="">
+              <h3 class="step__title">Rimozione a 48 ore</h3>
+              <p class="step__text">Dopo 48 ore i cerotti vengono rimossi in studio. Prima lettura delle reazioni. La schiena deve rimanere asciutta durante questo periodo &mdash; nessuna doccia o attivit&agrave; fisica intensa.</p>
             </div>
-          </li>
-          <li class="steps-list__item" data-fade>
-            <span class="steps-list__num" aria-hidden="true">03</span>
-            <div class="steps-list__body">
-              <h3 class="steps-list__title">Seconda lettura a 72&ndash;96 ore</h3>
-              <p class="steps-list__text">Le reazioni ritardate compaiono spesso solo dopo 72&ndash;96 ore. La seconda lettura &egrave; obbligatoria: saltarla significherebbe perdere fino al 30% delle reazioni positive.</p>
+          </div>
+          <div class="step" data-fade>
+            <span class="step__number" aria-hidden="true">3</span>
+            <div class="">
+              <h3 class="step__title">Seconda lettura a 72&ndash;96 ore</h3>
+              <p class="step__text">Le reazioni ritardate compaiono spesso solo dopo 72&ndash;96 ore. La seconda lettura &egrave; obbligatoria: saltarla significherebbe perdere fino al 30% delle reazioni positive.</p>
             </div>
-          </li>
-          <li class="steps-list__item" data-fade>
-            <span class="steps-list__num" aria-hidden="true">04</span>
-            <div class="steps-list__body">
-              <h3 class="steps-list__title">Referto e piano di gestione</h3>
-              <p class="steps-list__text">Ricevi un referto scritto con le sostanze positive, la loro rilevanza clinica e indicazioni pratiche su cosa evitare &mdash; prodotti, cosmetici, ambienti &mdash; con riferimenti a elenchi di prodotti sicuri quando disponibili.</p>
+          </div>
+          <div class="step" data-fade>
+            <span class="step__number" aria-hidden="true">4</span>
+            <div class="">
+              <h3 class="step__title">Referto e piano di gestione</h3>
+              <p class="step__text">Ricevi un referto scritto con le sostanze positive, la loro rilevanza clinica e indicazioni pratiche su cosa evitare &mdash; prodotti, cosmetici, ambienti &mdash; con riferimenti a elenchi di prodotti sicuri quando disponibili.</p>
             </div>
-          </li>
-        </ol>
+          </div>
+        </div>
 
         <p style="margin-top:var(--space-6); font-size:var(--text-sm); color:var(--color-text-light); font-style:italic; line-height:var(--leading-relaxed);">
           Il patch test richiede tre accessi in giorni diversi (giorno 1, giorno 3, giorno 4 o 5). Si pianificano tutti al momento della prenotazione.
@@ -342,7 +344,7 @@
       <div class="container">
         <div class="faq-layout">
 
-          <div class="faq-layout__intro">
+          <div class="faq-intro">
             <p class="section-label">Domande frequenti</p>
             <h2 id="faq-heading">Domande sul patch test</h2>
             <p style="color:var(--color-text-muted); margin-top:var(--space-4); line-height:var(--leading-relaxed);">
@@ -350,7 +352,7 @@
             </p>
           </div>
 
-          <div class="faq-accordion">
+          <div class="faq-list">
 
             <div class="faq-item">
               <button class="faq-question" aria-expanded="false" type="button">
@@ -498,25 +500,25 @@
         <div class="services-grid">
 
           <a href="/specializzazioni/allergia-nichel-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Allergia al Nichel</h3>
-              <p class="service-card__text">Patch test per la diagnosi di allergia da contatto al nichel e SNAS. Valutazione completa con indicazioni su dieta e stile di vita.</p>
+              <p class="service-card__desc">Patch test per la diagnosi di allergia da contatto al nichel e SNAS. Valutazione completa con indicazioni su dieta e stile di vita.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
 
           <a href="/specializzazioni/test-allergie-alimentari-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Test allergie alimentari</h3>
-              <p class="service-card__text">Prick test, diagnostica molecolare e patch test alimentare per identificare allergie a cibi specifici. Diagnosi completa in un&rsquo;unica seduta.</p>
+              <p class="service-card__desc">Prick test, diagnostica molecolare e patch test alimentare per identificare allergie a cibi specifici. Diagnosi completa in un&rsquo;unica seduta.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
 
           <a href="/specializzazioni/allergie-bambini-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Allergie nei bambini</h3>
-              <p class="service-card__text">Diagnosi e gestione delle allergie in et&agrave; pediatrica. Prick test e piano terapeutico su misura per i pi&ugrave; piccoli.</p>
+              <p class="service-card__desc">Diagnosi e gestione delle allergie in et&agrave; pediatrica. Prick test e piano terapeutico su misura per i pi&ugrave; piccoli.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>

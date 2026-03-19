@@ -664,20 +664,6 @@
   font-weight: var(--font-light);
 }
 
-/* Diagnostica layout asimmetrico nelle landing */
-.diag-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: var(--space-12);
-  align-items: start;
-}
-
-.diag-layout p {
-  color: var(--color-text-muted);
-  line-height: var(--leading-relaxed);
-  font-weight: var(--font-light);
-  margin-bottom: var(--space-4);
-}
 
 /* ================================================
    NUOVI COMPONENTI — v2.0
@@ -791,7 +777,6 @@
   .faq-intro { position: static; }
   .location-inner { grid-template-columns: 1fr; }
   .booking-grid { grid-template-columns: 1fr; }
-  .diag-layout { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -830,4 +815,17 @@
   .checklist-grid { grid-template-columns: 1fr; gap: var(--space-6); }
 
   .page-hero__img-wrap img { height: 240px; }
+}
+
+.spec-diag-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .spec-diag-layout {
+    grid-template-columns: 1fr;
+  }
 }

@@ -82,8 +82,10 @@
           <a href="/guide/" class="nav-link">Guide per i pazienti</a>
         </nav>
         <div class="header-cta">
-          <a href="/prenota/" class="btn btn--primary btn--sm">Prenota la visita</a>
-          <span class="header-cta__label">Disponibile anche online</span>
+          <a href="tel:+39 339 1565344" class="btn btn--primary btn--sm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.93 3.26 2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +39 339 1565344
+          </a>
         </div>
         <button class="hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="mobile-nav" type="button">
           <span class="hamburger__line" aria-hidden="true"></span>
@@ -293,9 +295,9 @@
           <h2 id="diagnostica-heading">Tutto in un unico appuntamento</h2>
         </header>
 
-        <div class="diag-layout">
+        <div class="spec-diag-layout">
 
-          <div class="diag-layout__main">
+          <div class="spec-diag-layout__text">
             <p style="color:var(--color-text-muted); margin-bottom:var(--space-4); line-height:var(--leading-relaxed);">
               La spirometria con test di reversibilit&agrave; &egrave; l&rsquo;esame di riferimento per la diagnosi di asma. I test cutanei identificano gli allergeni responsabili della rinite. La citologia nasale valuta il tipo di infiammazione delle vie aeree superiori.
             </p>
@@ -303,34 +305,33 @@
               Tutti questi esami vengono eseguiti nello stesso studio, nella stessa seduta.
             </p>
 
-            <ol class="steps-list steps-list--3" role="list">
-              <li class="steps-list__item" data-fade>
-                <span class="steps-list__num" aria-hidden="true">01</span>
-                <div class="steps-list__body">
-                  <h3 class="steps-list__title">Visita e anamnesi</h3>
-                  <p class="steps-list__text">Raccogliamo la storia clinica completa: quando compaiono i sintomi, in quali ambienti, con quali fattori scatenanti.</p>
+            <div class="steps-list">
+              <div class="step" data-fade>
+                <span class="step__number" aria-hidden="true">1</span>
+                <div class="">
+                  <h3 class="step__title">Visita e anamnesi</h3>
+                  <p class="step__text">Raccogliamo la storia clinica completa: quando compaiono i sintomi, in quali ambienti, con quali fattori scatenanti.</p>
                 </div>
-              </li>
-              <li class="steps-list__item" data-fade>
-                <span class="steps-list__num" aria-hidden="true">02</span>
-                <div class="steps-list__body">
-                  <h3 class="steps-list__title">Spirometria e test cutanei</h3>
-                  <p class="steps-list__text">Spirometria con test di reversibilit&agrave; e prick test per inalanti (pollini, acari, muffe, animali). Lettura immediata.</p>
+              </div>
+              <div class="step" data-fade>
+                <span class="step__number" aria-hidden="true">2</span>
+                <div class="">
+                  <h3 class="step__title">Spirometria e test cutanei</h3>
+                  <p class="step__text">Spirometria con test di reversibilit&agrave; e prick test per inalanti (pollini, acari, muffe, animali). Lettura immediata.</p>
                 </div>
-              </li>
-              <li class="steps-list__item" data-fade>
-                <span class="steps-list__num" aria-hidden="true">03</span>
-                <div class="steps-list__body">
-                  <h3 class="steps-list__title">Diagnosi integrata</h3>
-                  <p class="steps-list__text">Diagnosi precisa, piano terapeutico e &mdash; se indicata &mdash; proposta di immunoterapia specifica per gestire la causa, non solo i sintomi.</p>
+              </div>
+              <div class="step" data-fade>
+                <span class="step__number" aria-hidden="true">3</span>
+                <div class="">
+                  <h3 class="step__title">Diagnosi integrata</h3>
+                  <p class="step__text">Diagnosi precisa, piano terapeutico e &mdash; se indicata &mdash; proposta di immunoterapia specifica per gestire la causa, non solo i sintomi.</p>
                 </div>
-              </li>
-            </ol>
+              </div>
+            </div>
           </div>
 
-          <div class="diag-layout__table">
-            <div class="spec-table-wrap">
-              <table class="spec-table">
+          <div class="spec-diag-layout__table">
+            <table class="spec-table">
                 <thead>
                   <tr>
                     <th scope="col">Esame</th>
@@ -370,8 +371,7 @@
                     <td>Su richiesta</td>
                   </tr>
                 </tbody>
-              </table>
-            </div>
+            </table>
           </div>
 
         </div>
@@ -385,7 +385,7 @@
       <div class="container">
         <div class="faq-layout">
 
-          <div class="faq-layout__intro">
+          <div class="faq-intro">
             <p class="section-label">Domande frequenti</p>
             <h2 id="faq-heading">Domande su rinite e asma</h2>
             <p style="color:var(--color-text-muted); margin-top:var(--space-4); line-height:var(--leading-relaxed);">
@@ -393,7 +393,7 @@
             </p>
           </div>
 
-          <div class="faq-accordion">
+          <div class="faq-list">
 
             <div class="faq-item">
               <button class="faq-question" aria-expanded="false" type="button">
@@ -541,25 +541,25 @@
         <div class="services-grid">
 
           <a href="/specializzazioni/allergie-bambini-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Allergie nei bambini</h3>
-              <p class="service-card__text">Diagnosi e gestione delle allergie in et&agrave; pediatrica. Prick test, spirometria e piano terapeutico su misura per i pi&ugrave; piccoli.</p>
+              <p class="service-card__desc">Diagnosi e gestione delle allergie in et&agrave; pediatrica. Prick test, spirometria e piano terapeutico su misura per i pi&ugrave; piccoli.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
 
           <a href="/specializzazioni/allergia-nichel-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Allergia al Nichel</h3>
-              <p class="service-card__text">Patch test per la diagnosi di allergia da contatto al nichel e SNAS. Valutazione completa con indicazioni su dieta e stile di vita.</p>
+              <p class="service-card__desc">Patch test per la diagnosi di allergia da contatto al nichel e SNAS. Valutazione completa con indicazioni su dieta e stile di vita.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
 
           <a href="/specializzazioni/test-allergie-alimentari-roma/" class="service-card" data-fade>
-            <div class="service-card__body">
+            <div class="">
               <h3 class="service-card__title">Test allergie alimentari</h3>
-              <p class="service-card__text">Prick test, diagnostica molecolare e patch test alimentare per identificare allergie a cibi specifici. Diagnosi completa in un&rsquo;unica seduta.</p>
+              <p class="service-card__desc">Prick test, diagnostica molecolare e patch test alimentare per identificare allergie a cibi specifici. Diagnosi completa in un&rsquo;unica seduta.</p>
               <span class="service-card__link">Scopri di pi&ugrave; &rarr;</span>
             </div>
           </a>
