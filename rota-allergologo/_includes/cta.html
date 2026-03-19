@@ -1,0 +1,153 @@
+<!-- ============================================
+     CTA.HTML — Form EmailJS AJAX + fallback telefono
+     Canale primario di contatto
+     SETUP RICHIESTO: sostituire [PUBLIC-KEY], [SERVICE-ID], [TEMPLATE-ID], [NUMERO]
+     Dott.ssa Federica Rota · Allergologia Roma
+     ============================================ -->
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function () {
+    // TODO: sostituire [PUBLIC-KEY] con la chiave pubblica da emailjs.com → Account → API Keys
+    emailjs.init('v0e_5t0QiFGm3XJxU');
+  })();
+</script>
+
+<section class="cta-block" aria-labelledby="cta-headline">
+  <div class="container">
+    <div class="cta-block__inner">
+
+      <!-- Left: copy -->
+      <div class="cta-block__content">
+        <h2 id="cta-headline">Hai domande? Prenota una visita allergologica.</h2>
+        <p class="cta-block__subtitle">
+          Visita allergologica per adulti e bambini &middot;
+          Diagnostica completa in un&rsquo;unica seduta &middot;
+          Via Brennero 3, Roma
+        </p>
+
+        <a href="tel:[NUMERO]" class="cta-block__phone" aria-label="Chiama lo studio">
+          <span aria-hidden="true">📞</span> [NUMERO]
+        </a>
+
+        <p class="cta-block__note">
+          La visita allergologica è il primo passo per una diagnosi accurata.
+          Non sostituisce il parere di altri specialisti già in cura.
+        </p>
+      </div>
+
+      <!-- Right: form -->
+      <div class="cta-form" role="form" aria-label="Form prenotazione visita allergologica">
+
+        <form id="cta-form" novalidate>
+
+          <!-- Nome e cognome (required) -->
+          <div class="form-group">
+            <label class="form-label" for="cta-nome">
+              Nome e cognome <span class="form-required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="cta-nome"
+              name="nome"
+              class="form-control"
+              placeholder="Nome e cognome"
+              required
+              autocomplete="name"
+              aria-required="true"
+            >
+          </div>
+
+          <!-- Telefono (required) -->
+          <div class="form-group">
+            <label class="form-label" for="cta-telefono">
+              Telefono <span class="form-required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="tel"
+              id="cta-telefono"
+              name="telefono"
+              class="form-control"
+              placeholder="Telefono"
+              required
+              autocomplete="tel"
+              aria-required="true"
+            >
+          </div>
+
+          <!-- Email (optional) -->
+          <div class="form-group">
+            <label class="form-label" for="cta-email">
+              Email <span style="font-size:0.75rem; color:var(--color-text-muted); font-weight:400;">(opzionale)</span>
+            </label>
+            <input
+              type="email"
+              id="cta-email"
+              name="email"
+              class="form-control"
+              placeholder="Email"
+              autocomplete="email"
+            >
+          </div>
+
+          <!-- Messaggio (optional) -->
+          <div class="form-group">
+            <label class="form-label" for="cta-messaggio">
+              Messaggio <span style="font-size:0.75rem; color:var(--color-text-muted); font-weight:400;">(opzionale)</span>
+            </label>
+            <textarea
+              id="cta-messaggio"
+              name="messaggio"
+              class="form-control"
+              placeholder="Messaggio (opzionale)"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <!-- GDPR checkbox (required) -->
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input
+                type="checkbox"
+                name="gdpr"
+                required
+                aria-required="true"
+              >
+              <span class="form-checkbox__label">
+                Ho letto la <a href="/privacy/" target="_blank" rel="noopener">Privacy Policy</a>
+                e acconsento al trattamento dei miei dati personali per essere ricontattato
+                <span class="form-required" aria-hidden="true">*</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit">
+            <button type="submit" class="btn btn--primary btn--lg" aria-label="Invia richiesta di prenotazione">
+              Invia richiesta
+            </button>
+          </div>
+
+          <!-- Status message (shown by JS) -->
+          <div
+            id="form-status"
+            class="form-status"
+            role="alert"
+            aria-live="polite"
+            style="display:none;"
+          ></div>
+
+        </form><!-- /#cta-form -->
+
+        <!-- Fallback telefono -->
+        <p style="margin-top:1rem; font-size:0.875rem; color:var(--color-text-muted); text-align:center;">
+          Oppure chiama direttamente:
+          <a href="tel:[NUMERO]" style="font-weight:600; color:var(--color-primary);">[NUMERO]</a>
+        </p>
+
+      </div><!-- /.cta-form -->
+
+    </div><!-- /.cta-block__inner -->
+  </div><!-- /.container -->
+</section>

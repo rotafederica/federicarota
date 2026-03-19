@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!--
+    PRENOTA — prenota.html (URL: /prenota/)
+    Front matter Eleventy (fase 2):
+    title: 'Prenota la visita allergologica | Dott.ssa Federica Rota Roma'
+    description: 'Prenota online la tua visita allergologica a Roma. Adulti e bambini. Studio in zona Montesacro, Via Brennero 3.'
+    og_image: '/assets/img/og/og-homepage.jpg'
+    canonical_url: 'https://www.federica-rota-allergologo.it/prenota/'
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Prenota la visita allergologica | Dott.ssa Federica Rota Roma</title>
+  <meta name="description" content="Prenota online la tua visita allergologica a Roma. Adulti e bambini. Studio in zona Montesacro, Via Brennero 3. Form contatto o Doctolib.">
+  <meta name="author" content="Dott.ssa Federica Rota">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.federica-rota-allergologo.it/prenota/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dott.ssa Federica Rota — Allergologia Roma">
+  <meta property="og:title" content="Prenota la visita allergologica | Dott.ssa Federica Rota Roma">
+  <meta property="og:description" content="Prenota online la tua visita allergologica a Roma. Adulti e bambini. Studio in zona Montesacro, Via Brennero 3. Form contatto o Doctolib.">
+  <meta property="og:image" content="https://www.federica-rota-allergologo.it/assets/img/og/og-homepage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.federica-rota-allergologo.it/prenota/">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prenota la visita allergologica | Dott.ssa Federica Rota Roma">
+  <meta name="twitter:description" content="Prenota online la tua visita allergologica a Roma. Adulti e bambini. Studio in zona Montesacro, Via Brennero 3.">
+  <meta name="twitter:image" content="https://www.federica-rota-allergologo.it/assets/img/og/og-homepage.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dott.ssa Federica Rota",
+    "description": "Allergologa e immunologa clinica specializzata nella diagnosi e gestione delle malattie allergiche in adulti e bambini.",
+    "medicalSpecialty": ["Allergology", "Immunology"],
+    "url": "https://www.federica-rota-allergologo.it/",
+    "telephone": "[NUMERO]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Brennero 3",
+      "addressLocality": "Roma",
+      "postalCode": "00141",
+      "addressCountry": "IT"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="site-logo" aria-label="Dott.ssa Federica Rota — Homepage">
+          <span class="site-logo__name">Dott.ssa Federica Rota</span>
+          <span class="site-logo__tagline">Allergologia e Immunologia Clinica</span>
+        </a>
+        <nav class="site-nav" role="navigation" aria-label="Navigazione principale">
+          <a href="/chi-sono/" class="nav-link">Chi sono</a>
+          <div class="nav-item--dropdown">
+            <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+              Specializzazioni <span class="dropdown-arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="/specializzazioni/allergie-bambini-roma/" class="dropdown-item" role="menuitem">Allergie nei bambini</a></li>
+              <li role="none"><a href="/specializzazioni/test-allergie-alimentari-roma/" class="dropdown-item" role="menuitem">Test allergie alimentari</a></li>
+              <li role="none"><a href="/specializzazioni/patch-test-dermatite-roma/" class="dropdown-item" role="menuitem">Patch Test — Dermatite</a></li>
+              <li role="none"><a href="/specializzazioni/rinite-allergica-asma-roma/" class="dropdown-item" role="menuitem">Rinite allergica e Asma</a></li>
+              <li role="none"><a href="/specializzazioni/allergia-nichel-roma/" class="dropdown-item" role="menuitem">Allergia al Nichel</a></li>
+            </ul>
+          </div>
+          <a href="/guide/" class="nav-link">Guide per i pazienti</a>
+        </nav>
+        <div class="header-cta">
+          <a href="/prenota/" class="btn btn--primary btn--sm" aria-current="page">Prenota la visita</a>
+          <span class="header-cta__label">Disponibile anche online</span>
+        </div>
+        <button class="hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="mobile-nav" type="button">
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav" role="navigation" aria-label="Navigazione mobile">
+    <a href="/chi-sono/" class="mobile-nav__link">Chi sono</a>
+    <div>
+      <span class="mobile-nav__sublabel">Specializzazioni</span>
+      <div class="mobile-nav__submenu">
+        <a href="/specializzazioni/allergie-bambini-roma/" class="mobile-nav__sublink">Allergie nei bambini</a>
+        <a href="/specializzazioni/test-allergie-alimentari-roma/" class="mobile-nav__sublink">Test allergie alimentari</a>
+        <a href="/specializzazioni/patch-test-dermatite-roma/" class="mobile-nav__sublink">Patch Test — Dermatite</a>
+        <a href="/specializzazioni/rinite-allergica-asma-roma/" class="mobile-nav__sublink">Rinite allergica e Asma</a>
+        <a href="/specializzazioni/allergia-nichel-roma/" class="mobile-nav__sublink">Allergia al Nichel</a>
+      </div>
+    </div>
+    <a href="/guide/" class="mobile-nav__link">Guide per i pazienti</a>
+    <div class="mobile-nav__cta">
+      <a href="/prenota/" class="btn btn--primary" style="width:100%; justify-content:center; padding:1rem;">Prenota la visita</a>
+      <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--color-text-muted); text-align:center;">Disponibile anche online · Risposta entro 24h</p>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- ====================================================
+         HERO PAGINA
+         ==================================================== -->
+    <section class="page-hero" aria-labelledby="prenota-h1">
+      <div class="container">
+        <h1 id="prenota-h1">Prenota la tua visita</h1>
+        <p class="page-hero__subtitle">
+          Scegli il modo più comodo per prenotare. Compila il form qui sotto o usa Doctolib. Risposta garantita entro 24 ore.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEZIONE 1 — FORM EMAILJS (primario) + CANALI SIDEBAR
+         ==================================================== -->
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        // TODO: sostituire [PUBLIC-KEY] con la chiave pubblica da emailjs.com → Account → API Keys
+        emailjs.init('[PUBLIC-KEY]');
+      })();
+    </script>
+
+    <section class="booking-section section" aria-labelledby="booking-heading">
+      <div class="container">
+
+        <h2 id="booking-heading" class="sr-only">Canali di prenotazione</h2>
+
+        <div class="booking-grid">
+
+          <!-- Colonna principale: form EmailJS -->
+          <div class="booking-primary">
+            <h2 style="margin-bottom:1.5rem; font-size:var(--text-2xl);">
+              <span aria-hidden="true">✉️</span> Invia una richiesta
+            </h2>
+            <p style="color:var(--color-text-muted); margin-bottom:2rem; line-height:var(--leading-relaxed);">
+              Compila il form e ti ricontatteremo entro 24 ore per confermare l&rsquo;appuntamento. Nessun redirect, nessun dato archiviato su server terzi.
+            </p>
+
+            <div class="cta-form" style="background-color:var(--color-bg); box-shadow:var(--shadow-sm);">
+              <form id="cta-form" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="cta-nome">Nome e cognome <span class="form-required" aria-hidden="true">*</span></label>
+                  <input type="text" id="cta-nome" name="nome" class="form-control" placeholder="Nome e cognome" required autocomplete="name" aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cta-telefono">Telefono <span class="form-required" aria-hidden="true">*</span></label>
+                  <input type="tel" id="cta-telefono" name="telefono" class="form-control" placeholder="Telefono" required autocomplete="tel" aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cta-email">Email <span style="font-size:0.75rem; color:var(--color-text-muted); font-weight:400;">(opzionale)</span></label>
+                  <input type="email" id="cta-email" name="email" class="form-control" placeholder="Email" autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cta-messaggio">Messaggio <span style="font-size:0.75rem; color:var(--color-text-muted); font-weight:400;">(opzionale)</span></label>
+                  <textarea id="cta-messaggio" name="messaggio" class="form-control" placeholder="Messaggio (opzionale) — es. tipo di visita, fascia oraria preferita" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="gdpr" required aria-required="true">
+                    <span class="form-checkbox__label">
+                      Ho letto la <a href="/privacy/" target="_blank" rel="noopener">Privacy Policy</a> e acconsento al trattamento dei miei dati personali per essere ricontattato
+                      <span class="form-required" aria-hidden="true">*</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="form-submit">
+                  <button type="submit" class="btn btn--primary btn--lg" aria-label="Invia richiesta di prenotazione">
+                    Invia richiesta
+                  </button>
+                </div>
+                <div id="form-status" class="form-status" role="alert" aria-live="polite" style="display:none;"></div>
+              </form>
+              <p style="margin-top:1rem; font-size:0.875rem; color:var(--color-text-muted); text-align:center;">
+                Oppure chiama direttamente:
+                <a href="tel:[NUMERO]" style="font-weight:600; color:var(--color-primary);">[NUMERO]</a>
+              </p>
+            </div>
+
+          </div><!-- /.booking-primary -->
+
+          <!-- Sidebar: canali alternativi -->
+          <div class="booking-sidebar">
+
+            <!-- Doctolib -->
+            <div class="booking-option booking-option--doctolib">
+              <div class="booking-option__icon" aria-hidden="true">🗓</div>
+              <h3 class="booking-option__title">Prenota su Doctolib</h3>
+              <p class="booking-option__text">
+                Disponibile 24 ore su 24, 7 giorni su 7. Scegli data e ora in autonomia, senza aspettare una risposta.
+              </p>
+              <a
+                href="[LINK-DOCTOLIB]"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="width:100%; justify-content:center;"
+                aria-label="Prenota su Doctolib (si apre in una nuova finestra)"
+              >
+                Prenota direttamente il tuo slot →
+              </a>
+            </div>
+
+            <!-- Telefono -->
+            <div class="booking-option booking-option--phone">
+              <div class="booking-option__icon" aria-hidden="true">📞</div>
+              <h3 class="booking-option__title">Chiamata diretta</h3>
+              <p class="booking-option__text">
+                Preferisci parlare con noi? Chiamaci durante gli orari di ricevimento.
+              </p>
+              <a href="tel:[NUMERO]" class="phone-link" aria-label="Chiama lo studio">[NUMERO]</a>
+              <p style="font-size:0.8rem; color:var(--color-text-muted);">[ORARI]</p>
+            </div>
+
+          </div><!-- /.booking-sidebar -->
+
+        </div><!-- /.booking-grid -->
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEZIONE 2 — DOVE CI TROVIAMO + MAPPA
+         ==================================================== -->
+    <section class="prenota-location section" aria-labelledby="location-heading-prenota">
+      <div class="container">
+
+        <header class="section-header text-center">
+          <h2 id="location-heading-prenota">Dove ci troviamo</h2>
+        </header>
+
+        <div class="prenota-location-inner">
+
+          <!-- Mappa -->
+          <div class="map-container">
+            <!-- TODO: sostituire [MAPS-EMBED-URL] con URL embed Google Maps per Via Brennero 3, Roma -->
+            <iframe
+              src="[MAPS-EMBED-URL]"
+              title="Mappa studio Dott.ssa Federica Rota — Via Brennero 3, Roma"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Mappa Google dello studio medico in Via Brennero 3, Roma"
+            ></iframe>
+          </div>
+
+          <!-- Info -->
+          <div>
+            <div class="location-detail">
+
+              <div class="location-detail__item">
+                <span class="location-detail__icon" aria-hidden="true">📍</span>
+                <div class="location-detail__text">
+                  <strong>Indirizzo</strong>
+                  Via Brennero 3, Roma<br>
+                  Zona Montesacro / Prati Fiscali
+                </div>
+              </div>
+
+              <div class="location-detail__item">
+                <span class="location-detail__icon" aria-hidden="true">📞</span>
+                <div class="location-detail__text">
+                  <strong>Telefono</strong>
+                  <a href="tel:[NUMERO]" style="color:var(--color-primary); font-weight:600; font-size:1.1rem;">[NUMERO]</a>
+                </div>
+              </div>
+
+              <div class="location-detail__item">
+                <span class="location-detail__icon" aria-hidden="true">🕐</span>
+                <div class="location-detail__text">
+                  <strong>Orari ricevimento</strong>
+                  [ORARI]<br>
+                  <em style="font-size:0.8rem; color:var(--color-text-muted);">Su appuntamento</em>
+                </div>
+              </div>
+
+              <div class="location-detail__item">
+                <span class="location-detail__icon" aria-hidden="true">🚌</span>
+                <div class="location-detail__text">
+                  <strong>Come raggiungerci</strong>
+                  [Da completare: linea bus, metro, parcheggi vicini]
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEZIONE 3 — FAQ PRENOTAZIONE
+         ==================================================== -->
+    <section class="section" style="background-color:var(--color-white);" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <header class="section-header text-center">
+          <h2 id="faq-heading">Domande frequenti</h2>
+          <p class="text-muted">Tutto quello che devi sapere prima di prenotare.</p>
+        </header>
+
+        <div class="faq-list" role="list">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+              id="faq-btn-1"
+            >
+              Qual è il costo della visita?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-1"
+              role="region"
+              aria-labelledby="faq-btn-1"
+            >
+              Il costo varia a seconda della tipologia di visita e dei test effettuati. Compila il form o prenota su Doctolib dove trovi i prezzi aggiornati. Per informazioni puoi anche chiamare direttamente lo studio.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+              id="faq-btn-2"
+            >
+              Posso portare mio figlio?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-2"
+              role="region"
+              aria-labelledby="faq-btn-2"
+            >
+              Sì. Eseguo visite allergologiche per bambini di tutte le età, con approccio calibrato per i piccoli pazienti e comunicazione diretta con i genitori. Ho maturato esperienza in allergologia pediatrica al Policlinico Umberto I e al Bambino Gesù.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+              id="faq-btn-3"
+            >
+              Devo portare esami precedenti?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-3"
+              role="region"
+              aria-labelledby="faq-btn-3"
+            >
+              Non è obbligatorio, ma se hai già eseguito test allergologici o referti di visite precedenti, portali: aiutano a costruire un percorso diagnostico più preciso e a ottimizzare il tempo della visita.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-4"
+              id="faq-btn-4"
+            >
+              Quanto dura la prima visita?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-4"
+              role="region"
+              aria-labelledby="faq-btn-4"
+            >
+              La prima visita dura circa 45–60 minuti. Con test diagnostici nella stessa seduta (prick test, patch test, spirometria) prevedere 60–90 minuti. Verrai informato sui tempi al momento della prenotazione.
+            </div>
+          </div>
+
+        </div><!-- /.faq-list -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-brand__name">Dott.ssa Federica Rota</p>
+          <p class="footer-brand__specialty">Allergologia e Immunologia Clinica</p>
+          <address class="footer-brand__address" style="font-style:normal;">
+            Via Brennero 3, Roma<br>Zona Montesacro / Prati Fiscali
+          </address>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Contatti</h2>
+          <div class="footer-contact-item">
+            <a href="tel:[NUMERO]">📞 [NUMERO]</a>
+            <a href="mailto:[EMAIL]">✉️ [EMAIL]</a>
+            <a href="[LINK-DOCTOLIB]" target="_blank" rel="noopener noreferrer">🗓 Prenota online →</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Orari ricevimento</h2>
+          <div class="footer-hours__list">[ORARI]<br><em style="font-size:0.8rem; color:rgba(184,208,208,0.6);">Su appuntamento</em></div>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Esplora</h2>
+          <ul class="footer-links__list">
+            <li class="footer-links__item"><a href="/chi-sono/">Chi sono</a></li>
+            <li class="footer-links__item"><a href="/specializzazioni/allergie-bambini-roma/">Allergie nei bambini</a></li>
+            <li class="footer-links__item"><a href="/guide/">Guide per i pazienti</a></li>
+            <li class="footer-links__item"><a href="/prenota/">Prenota</a></li>
+            <li class="footer-links__item"><a href="/privacy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p class="footer-legal__copy">&copy; 2026 Dott.ssa Federica Rota &middot; P.IVA [P.IVA]</p>
+        <div class="footer-legal__links">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/prenota/">Contatti</a>
+        </div>
+        <p class="footer-legal__deontology">
+          Sito conforme al Codice di Deontologia Medica FNOMCEO. I contenuti di questo sito hanno scopo informativo e non sostituiscono il parere del medico specialista. Per una diagnosi accurata è necessaria una visita medica.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

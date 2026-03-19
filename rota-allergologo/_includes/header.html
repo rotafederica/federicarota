@@ -1,0 +1,121 @@
+<!-- ============================================
+     HEADER.HTML — Componente riutilizzabile
+     Nav sticky · CTA sempre visibile · Mobile hamburger
+     Dott.ssa Federica Rota · Allergologia Roma
+     ============================================ -->
+
+<a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="/" class="site-logo" aria-label="Dott.ssa Federica Rota — Homepage">
+        <span class="site-logo__name">Dott.ssa Federica Rota</span>
+        <span class="site-logo__tagline">Allergologia e Immunologia Clinica</span>
+      </a>
+
+      <!-- Desktop navigation -->
+      <nav class="site-nav" role="navigation" aria-label="Navigazione principale">
+
+        <a href="/chi-sono/" class="nav-link">Chi sono</a>
+
+        <!-- Dropdown Specializzazioni -->
+        <div class="nav-item--dropdown">
+          <button
+            class="nav-link nav-link--dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            type="button"
+          >
+            Specializzazioni
+            <span class="dropdown-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-label="Specializzazioni">
+            <li role="none">
+              <a href="/specializzazioni/allergie-bambini-roma/" class="dropdown-item" role="menuitem">
+                Allergie nei bambini
+              </a>
+            </li>
+            <li role="none">
+              <a href="/specializzazioni/test-allergie-alimentari-roma/" class="dropdown-item" role="menuitem">
+                Test allergie alimentari
+              </a>
+            </li>
+            <li role="none">
+              <a href="/specializzazioni/patch-test-dermatite-roma/" class="dropdown-item" role="menuitem">
+                Patch Test — Dermatite
+              </a>
+            </li>
+            <li role="none">
+              <a href="/specializzazioni/rinite-allergica-asma-roma/" class="dropdown-item" role="menuitem">
+                Rinite allergica e Asma
+              </a>
+            </li>
+            <li role="none">
+              <a href="/specializzazioni/allergia-nichel-roma/" class="dropdown-item" role="menuitem">
+                Allergia al Nichel
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="/guide/" class="nav-link">Guide per i pazienti</a>
+
+      </nav>
+
+      <!-- Header CTA (desktop) -->
+      <div class="header-cta">
+        <a href="/prenota/" class="btn btn--primary btn--sm">Prenota la visita</a>
+        <span class="header-cta__label">Disponibile anche online</span>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button
+        class="hamburger"
+        aria-label="Apri menu di navigazione"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        type="button"
+      >
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+      </button>
+
+    </div><!-- /.header-inner -->
+  </div><!-- /.container -->
+</header>
+
+<!-- Mobile navigation panel -->
+<nav
+  id="mobile-nav"
+  class="mobile-nav"
+  role="navigation"
+  aria-label="Navigazione mobile"
+>
+  <a href="/chi-sono/" class="mobile-nav__link">Chi sono</a>
+
+  <div>
+    <span class="mobile-nav__sublabel">Specializzazioni</span>
+    <div class="mobile-nav__submenu">
+      <a href="/specializzazioni/allergie-bambini-roma/" class="mobile-nav__sublink">Allergie nei bambini</a>
+      <a href="/specializzazioni/test-allergie-alimentari-roma/" class="mobile-nav__sublink">Test allergie alimentari</a>
+      <a href="/specializzazioni/patch-test-dermatite-roma/" class="mobile-nav__sublink">Patch Test — Dermatite</a>
+      <a href="/specializzazioni/rinite-allergica-asma-roma/" class="mobile-nav__sublink">Rinite allergica e Asma</a>
+      <a href="/specializzazioni/allergia-nichel-roma/" class="mobile-nav__sublink">Allergia al Nichel</a>
+    </div>
+  </div>
+
+  <a href="/guide/" class="mobile-nav__link">Guide per i pazienti</a>
+
+  <div class="mobile-nav__cta">
+    <a href="/prenota/" class="btn btn--primary" style="width:100%; justify-content:center; padding: 1rem;">
+      Prenota la visita
+    </a>
+    <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--color-text-muted); text-align:center;">
+      Disponibile anche online · Risposta entro 24h
+    </p>
+  </div>
+</nav>

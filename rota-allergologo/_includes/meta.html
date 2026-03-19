@@ -1,0 +1,126 @@
+<!-- ============================================
+     META.HTML — Template <head> riutilizzabile
+     Variabili Eleventy: title · description · og_image · canonical_url
+     Schema.org JSON-LD Physician inline
+     Dott.ssa Federica Rota · Allergologia Roma
+     ============================================
+
+     UTILIZZO (Eleventy front matter in ogni pagina):
+     ---
+     title: 'Allergologo Roma Nord | Dott.ssa Federica Rota'
+     description: 'Descrizione pagina 150-160 caratteri con keyword.'
+     og_image: '/assets/img/og/og-istituzionale.jpg'
+     canonical_url: 'https://www.federica-rota-allergologo.it/'
+     ---
+     {% include "meta.html" %}
+     ============================================ -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Primary Meta Tags -->
+<title>{{ title | default('Allergologo Roma Nord | Dott.ssa Federica Rota') }}</title>
+<meta name="description" content="{{ description | default('Visita allergologica privata per adulti e bambini a Roma, zona Montesacro. Diagnostica completa in un\'unica seduta. Prenota online.') }}">
+<meta name="author" content="Dott.ssa Federica Rota">
+<meta name="robots" content="index, follow">
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ canonical_url | default('https://www.federica-rota-allergologo.it/') }}">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dott.ssa Federica Rota — Allergologia Roma">
+<meta property="og:title" content="{{ title | default('Allergologo Roma Nord | Dott.ssa Federica Rota') }}">
+<meta property="og:description" content="{{ description | default('Visita allergologica privata per adulti e bambini a Roma, zona Montesacro. Diagnostica completa in un\'unica seduta. Prenota online.') }}">
+<meta property="og:image" content="https://www.federica-rota-allergologo.it{{ og_image | default('/assets/img/og/og-istituzionale.jpg') }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="{{ canonical_url | default('https://www.federica-rota-allergologo.it/') }}">
+<meta property="og:locale" content="it_IT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title | default('Allergologo Roma Nord | Dott.ssa Federica Rota') }}">
+<meta name="twitter:description" content="{{ description | default('Visita allergologica privata per adulti e bambini a Roma, zona Montesacro. Diagnostica completa in un\'unica seduta. Prenota online.') }}">
+<meta name="twitter:image" content="https://www.federica-rota-allergologo.it{{ og_image | default('/assets/img/og/og-istituzionale.jpg') }}">
+
+<!-- Favicon (placeholder — sostituire con favicon reale) -->
+<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+<!-- Preconnect (CDN EmailJS) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+<!-- CSS — self-hosted (no Google Fonts per compliance GDPR) -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/pages.css">
+
+<!-- Schema.org JSON-LD — Physician -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dott.ssa Federica Rota",
+  "description": "Allergologa e immunologa clinica specializzata nella diagnosi e gestione delle malattie allergiche in adulti e bambini. Studio privato a Roma, zona Montesacro.",
+  "medicalSpecialty": [
+    "Allergology",
+    "Immunology"
+  ],
+  "image": "https://www.federica-rota-allergologo.it/assets/img/dottoressa/img-01.webp",
+  "url": "https://www.federica-rota-allergologo.it/",
+  "telephone": "[NUMERO]",
+  "email": "[EMAIL]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Brennero 3",
+    "addressLocality": "Roma",
+    "addressRegion": "RM",
+    "postalCode": "00141",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "41.9433",
+    "longitude": "12.5327"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "[ORARIO-APERTURA]",
+      "closes": "[ORARIO-CHIUSURA]"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Laurea in Medicina e Chirurgia con lode",
+      "educationalLevel": "Laurea magistrale",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Sapienza Università di Roma"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Specializzazione in Allergologia e Immunologia Clinica con lode",
+      "educationalLevel": "Specializzazione",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Policlinico Umberto I — Sapienza Roma"
+      }
+    }
+  ],
+  "memberOf": {
+    "@type": "MedicalOrganization",
+    "name": "Roma Care and Research",
+    "description": "Gruppo multidisciplinare ORL"
+  },
+  "sameAs": [
+    "[LINK-DOCTOLIB]"
+  ]
+}
+</script>
