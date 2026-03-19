@@ -15,16 +15,16 @@
 |------|-------|
 | **Fase 1 (attuale)** | HTML/CSS/JS statico puro — nessun build tool, nessun framework |
 | **Fase 2** | Eleventy SSG (`.eleventy.js`) per gestione blog da file `.md` |
-| **Hosting target** | Netlify o GitHub Pages (sito statico) |
+| **Hosting target** | Vercel (deploy da GitHub, branch `main`) |
 
 **Regola JS:** JS minimale. Nessun framework (no React, no Vue). Solo vanilla JS per: menu mobile hamburger, form EmailJS AJAX, lazy load immagini.
 
 ---
 
-## Struttura cartelle (rota-allergologo/)
+## Struttura cartelle (root del repository)
 
 ```
-rota-allergologo/
+federicarota/             ← root del repo GitHub (deploy Vercel da root)
 ├── _includes/           ← componenti riutilizzabili (header, footer, meta, cta)
 ├── specializzazioni/    ← 5 landing page SEO per patologia
 ├── guide/               ← blog / articoli SEO (indice + articoli)
@@ -45,7 +45,9 @@ rota-allergologo/
 ├── robots.txt
 ├── sitemap.xml
 ├── schema-medico.json   ← JSON-LD Schema.org Physician
-└── .eleventy.js         ← Fase 2
+├── .eleventy.js         ← Fase 2
+├── CLAUDE.md
+└── Docs/                ← esclusa da git (.gitignore)
 ```
 
 ---
