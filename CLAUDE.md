@@ -93,8 +93,7 @@ federicarota/             ← root del repo GitHub (deploy Vercel da root)
 - File da aggiornare: `_includes/cta.html`
 
 ### Doctolib
-- Link prenotazione: `[LINK-DOCTOLIB]` — **da fornire dalla cliente**
-- Appare in: `_includes/header.html` (CTA sticky), `prenota.html`, `_includes/cta.html` (fallback)
+~~Rimosso dal sito (Marzo 2026) su decisione della cliente. Tutti i riferimenti a Doctolib e `[LINK-DOCTOLIB]` sono stati eliminati dall'HTML.~~
 
 ### Google Analytics 4
 - Tag: `G-XXXXXXXXXX` — **da configurare post-lancio**
@@ -118,7 +117,7 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 | ~~`[PUBLIC-KEY]`~~ | cta.html (EmailJS init) | ✅ `v0e_5t0QiFGm3XJxU` |
 | ~~`[SERVICE-ID]`~~ | main.js (EmailJS send) | ✅ `service_8mnekvf` |
 | ~~`[TEMPLATE-ID]`~~ | main.js (EmailJS send) | ✅ `template_xqm3uq7` |
-| `[LINK-DOCTOLIB]` | header, prenota.html | URL profilo Doctolib |
+| ~~`[LINK-DOCTOLIB]`~~ | — | ❌ Rimosso (Marzo 2026) |
 | `[ORARI]` | footer, prenota.html | Orari ricevimento aggiornati |
 | `[MAPS-EMBED-URL]` | prenota.html, index.html | URL embed Google Maps |
 
