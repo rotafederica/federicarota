@@ -21,6 +21,12 @@
   transition: box-shadow var(--transition), background-color var(--transition);
 }
 
+.site-header .container {
+  max-width: 100%;
+  padding-left: max(var(--space-8), 4vw);
+  padding-right: max(var(--space-8), 4vw);
+}
+
 .site-header.scrolled {
   box-shadow: var(--shadow-sm);
   background-color: rgba(245,242,237,0.98);
