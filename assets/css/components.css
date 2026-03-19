@@ -23,8 +23,8 @@
 
 .site-header .container {
   max-width: 100%;
-  padding-left: max(var(--space-8), 4vw);
-  padding-right: max(var(--space-8), 4vw);
+  padding-left: max(2rem, 4vw);
+  padding-right: max(2rem, 4vw);
 }
 
 .site-header.scrolled {
