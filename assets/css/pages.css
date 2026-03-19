@@ -786,6 +786,12 @@
 }
 
 @media (max-width: 768px) {
+  .diff-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -821,6 +827,10 @@
   .checklist-grid { grid-template-columns: 1fr; gap: var(--space-6); }
 
   .page-hero__img-wrap img { height: 240px; }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
 }
 
 .spec-diag-layout {
