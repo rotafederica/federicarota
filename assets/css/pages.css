@@ -523,6 +523,12 @@
   font-weight: var(--font-light);
   line-height: var(--leading-relaxed);
   max-width: 720px;
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.page-hero__actions {
+  margin-bottom: var(--space-5);
 }
 
 /* Page hero image wrap */
