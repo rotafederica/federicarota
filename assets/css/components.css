@@ -701,6 +701,7 @@ textarea.form-control {
 
 .form-submit {
   margin-top: var(--space-5);
+  text-align: center;
 }
 
 .form-status {
