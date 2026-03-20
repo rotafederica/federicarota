@@ -604,7 +604,7 @@
   transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
-.faq-item.is-open .faq-answer { max-height: 400px; }
+.faq-item.is-open .faq-answer { max-height: 800px; }
 
 .faq-answer__inner {
   padding-bottom: 22px;
