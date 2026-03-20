@@ -961,13 +961,13 @@
 }
 
 .article-body h2 {
-  margin-top: var(--space-10);
-  margin-bottom: var(--space-4);
+  margin-top: 3.5rem;
+  margin-bottom: var(--space-5);
 }
 
 .article-body h3 {
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-3);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
 }
 
 .article-body p {
