@@ -312,6 +312,16 @@
   color: var(--color-primary);
 }
 
+.faq-answer .check-list__item {
+  border: none;
+  padding: 3px 12px;
+}
+
+.faq-answer__inner {
+  border-left: none;
+  padding-left: 0;
+}
+
 /* ================================================
    HOMEPAGE — LOCATION
    ================================================ */
