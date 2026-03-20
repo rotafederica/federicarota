@@ -42,6 +42,7 @@ federicarota/             ← root del repo GitHub (deploy Vercel da root)
 ├── index.html           ← Homepage (/)
 ├── chi-sono.html        ← Chi sono (/chi-sono/)
 ├── prenota.html         ← Prenota (/prenota/)
+├── privacy/index.html   ← Privacy Policy (/privacy/) — noindex, follow
 ├── 404.html
 ├── robots.txt
 ├── sitemap.xml
@@ -155,10 +156,11 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 - [x] **Milestone 2** (Marzo 2026): `chi-sono.html` · 5 landing page `specializzazioni/`
 - [x] **Update v2.0** (Marzo 2026): core files sostituiti (Direzione B — Calore Nordico) · sistema immagini semantico · 5 landing page riscritte · `chi-sono` + `prenota` aggiornati
 - [x] **Milestone 3** (Marzo 2026): `guide/index.html` · 5 articoli guide (`rinite-allergica-bambini`, `sintomi-allergia-alimentare-bambini`, `allergia-pollini-primavera-roma`, `allergia-acari-polvere`, `come-funziona-patch-test`) · CSS classi guide in `pages.css`
+- [x] **Privacy Policy** (Marzo 2026): `privacy/index.html` creata da `Docs/privacy.html` — adattata allo stile del sito, noindex follow, layout 2 colonne con indice laterale sticky, dati reali inseriti (P.IVA, email, telefono)
+- [x] **Fix UI** (Marzo 2026): header CTA unificato `tel:+39 339 1565344` su tutte le pagine (guide, chi-sono, privacy) · H1 guide/index ridotto a `clamp(1.6rem, 3vw, 2.4rem)` · stili tipografia privacy ottimizzati
 
 ## Milestone successive
 
-- [ ] **Milestone 4:** `robots.txt` · `sitemap.xml` · `schema-medico.json` · `.eleventy.js` (Fase 2)
 - [ ] **Milestone 4:** `robots.txt` · `sitemap.xml` · `schema-medico.json` · `.eleventy.js` (Fase 2)
 - [ ] **Milestone 5:** Google Analytics 4 · Google Search Console · EmailJS configurazione reale
 
