@@ -158,6 +158,7 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 - [x] **Milestone 3** (Marzo 2026): `guide/index.html` · 5 articoli guide (`rinite-allergica-bambini`, `sintomi-allergia-alimentare-bambini`, `allergia-pollini-primavera-roma`, `allergia-acari-polvere`, `come-funziona-patch-test`) · CSS classi guide in `pages.css`
 - [x] **Privacy Policy** (Marzo 2026): `privacy/index.html` creata da `Docs/privacy.html` — adattata allo stile del sito, noindex follow, layout 2 colonne con indice laterale sticky, dati reali inseriti (P.IVA, email, telefono)
 - [x] **Fix UI** (Marzo 2026): header CTA unificato `tel:+39 339 1565344` su tutte le pagine (guide, chi-sono, privacy) · H1 guide/index ridotto a `clamp(1.6rem, 3vw, 2.4rem)` · stili tipografia privacy ottimizzati · `pages.css` `.article-body h2` margin-top portato a `3.5rem` e `h3` a `var(--space-10)` per separazione visiva tra sezioni articolo
+- [x] **Aggiornamento FAQ** (Marzo 2026): `index.html` — 6 FAQ cliniche con check-list SVG (quando serve visita, durata, dolore test, antistaminici, digiuno, immunoterapia) · `specializzazioni/allergie-bambini-roma/` — 7 FAQ pediatriche con check-list SVG · `components.css` max-height FAQ da 400px a 800px · `pages.css` regole `.faq-answer .check-list__item` e `.faq-answer__inner` per layout pulito dentro accordion
 
 ## Milestone successive
 
