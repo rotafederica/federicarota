@@ -36,7 +36,8 @@ federicarota/             ← root del repo GitHub (deploy Vercel da root)
 │   │   ├── studio/           ← sala-attesa.webp
 │   │   ├── diagnostica/      ← strumenti-diagnostici.webp
 │   │   ├── specializzazioni/ ← prick-test-bambino · patch-test-* · prick-test-avambraccio · visita-bambina (.webp)
-│   │   └── og/               ← og-homepage.jpg · og-specializzazioni.jpg · og-guide.jpg
+│   │   ├── og/               ← og-homepage.jpg · og-specializzazioni.jpg · og-guide.jpg
+│   │   └── favicon/          ← favicon.ico · favicon-16x16.png · favicon-32x32.png · apple-touch-icon.png · android-chrome-*.png · site.webmanifest
 │   └── fonts/           ← font self-hosted .woff2 (GDPR: no Google Fonts)
 ├── index.html           ← Homepage (/)
 ├── chi-sono.html        ← Chi sono (/chi-sono/)
@@ -153,10 +154,11 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 - [x] **Milestone 1** (Marzo 2026): CLAUDE.md · struttura cartelle · componenti `_includes/` · CSS base · `index.html` · `prenota.html`
 - [x] **Milestone 2** (Marzo 2026): `chi-sono.html` · 5 landing page `specializzazioni/`
 - [x] **Update v2.0** (Marzo 2026): core files sostituiti (Direzione B — Calore Nordico) · sistema immagini semantico · 5 landing page riscritte · `chi-sono` + `prenota` aggiornati
+- [x] **Milestone 3** (Marzo 2026): `guide/index.html` · 5 articoli guide (`rinite-allergica-bambini`, `sintomi-allergia-alimentare-bambini`, `allergia-pollini-primavera-roma`, `allergia-acari-polvere`, `come-funziona-patch-test`) · CSS classi guide in `pages.css`
 
 ## Milestone successive
 
-- [ ] **Milestone 3:** 5 articoli `guide/` · `guide/index.html`
+- [ ] **Milestone 4:** `robots.txt` · `sitemap.xml` · `schema-medico.json` · `.eleventy.js` (Fase 2)
 - [ ] **Milestone 4:** `robots.txt` · `sitemap.xml` · `schema-medico.json` · `.eleventy.js` (Fase 2)
 - [ ] **Milestone 5:** Google Analytics 4 · Google Search Console · EmailJS configurazione reale
 
