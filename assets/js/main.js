@@ -115,6 +115,20 @@ document.addEventListener('DOMContentLoaded', function () {
     ctaForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      const nome = ctaForm.querySelector('[name="nome"]');
+      if (nome && !nome.value.trim()) {
+        showStatus('error', 'Il campo Nome e cognome è obbligatorio.');
+        nome.focus();
+        return;
+      }
+
+      const telefono = ctaForm.querySelector('[name="telefono"]');
+      if (telefono && !telefono.value.trim()) {
+        showStatus('error', 'Il campo Telefono è obbligatorio.');
+        telefono.focus();
+        return;
+      }
+
       const gdpr = ctaForm.querySelector('[name="gdpr"]');
       if (gdpr && !gdpr.checked) {
         showStatus('error', 'Devi accettare la Privacy Policy per inviare il modulo.');
