@@ -116,9 +116,9 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 | `[NUMERO]` | header, footer, cta.html, prenota.html | Numero di telefono studio |
 | `[EMAIL]` | footer | Indirizzo email studio |
 | `[P.IVA]` | footer | Partita IVA |
-| ~~`[PUBLIC-KEY]`~~ | cta.html (EmailJS init) | ✅ `v0e_5t0QiFGm3XJxU` |
-| ~~`[SERVICE-ID]`~~ | main.js (EmailJS send) | ✅ `service_8mnekvf` |
-| ~~`[TEMPLATE-ID]`~~ | main.js (EmailJS send) | ✅ `template_xqm3uq7` |
+| ~~`[PUBLIC-KEY]`~~ | cta.html (EmailJS init) | ✅ `EayY0zQOVDw6GtTgv` |
+| ~~`[SERVICE-ID]`~~ | main.js (EmailJS send) | ✅ `service_834y28s` |
+| ~~`[TEMPLATE-ID]`~~ | main.js (EmailJS send) | ✅ `template_bovgj6n` |
 | ~~`[LINK-DOCTOLIB]`~~ | — | ❌ Rimosso (Marzo 2026) |
 | ~~`[ORARI]`~~ | footer, prenota.html | ✅ `Martedì e Giovedì 14:30–19:00` |
 | `[MAPS-EMBED-URL]` | prenota.html, index.html | URL embed Google Maps |

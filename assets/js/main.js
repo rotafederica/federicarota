@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       try {
         await emailjs.sendForm(
-          'service_8mnekvf',
-          'template_xqm3uq7',
+          'service_834y28s',
+          'template_bovgj6n',
           ctaForm
         );
 
