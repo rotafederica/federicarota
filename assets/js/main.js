@@ -115,6 +115,12 @@ document.addEventListener('DOMContentLoaded', function () {
     ctaForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      const gdpr = ctaForm.querySelector('[name="gdpr"]');
+      if (gdpr && !gdpr.checked) {
+        showStatus('error', 'Devi accettare la Privacy Policy per inviare il modulo.');
+        return;
+      }
+
       const submitBtn = ctaForm.querySelector('[type="submit"]');
       const original  = submitBtn.textContent;
       submitBtn.textContent = 'Invio in corso\u2026';
