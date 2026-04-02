@@ -120,7 +120,7 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 | ~~`[SERVICE-ID]`~~ | main.js (EmailJS send) | ✅ `service_8mnekvf` |
 | ~~`[TEMPLATE-ID]`~~ | main.js (EmailJS send) | ✅ `template_xqm3uq7` |
 | ~~`[LINK-DOCTOLIB]`~~ | — | ❌ Rimosso (Marzo 2026) |
-| `[ORARI]` | footer, prenota.html | Orari ricevimento aggiornati |
+| ~~`[ORARI]`~~ | footer, prenota.html | ✅ `Martedì e Giovedì 14:30–19:00` |
 | `[MAPS-EMBED-URL]` | prenota.html, index.html | URL embed Google Maps |
 
 ---
