@@ -141,10 +141,16 @@ document.addEventListener('DOMContentLoaded', function () {
       submitBtn.disabled = true;
 
       try {
-        await emailjs.sendForm(
+        await emailjs.send(
           'service_834y28s',
           'template_bovgj6n',
-          ctaForm
+          {
+            nome:      ctaForm.querySelector('[name="nome"]').value.trim(),
+            telefono:  ctaForm.querySelector('[name="telefono"]').value.trim(),
+            email:     ctaForm.querySelector('[name="email"]').value.trim(),
+            messaggio: (ctaForm.querySelector('[name="messaggio"]').value || '')
+                         .replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim()
+          }
         );
 
         showStatus('success', 'Messaggio inviato. Ti ricontatter\u00f2 entro 24 ore.');
