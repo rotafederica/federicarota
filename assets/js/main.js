@@ -155,6 +155,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         showStatus('success', 'Messaggio inviato. Ti ricontatter\u00f2 entro 24 ore.');
         ctaForm.reset();
+        if (typeof gtag === 'function') {
+          gtag('event', 'form_contatto_inviata', {
+            event_category: 'lead',
+            event_label: 'cta_form'
+          });
+        }
       } catch {
         showStatus('error', 'Errore nell\'invio. Riprova o chiama direttamente.');
       } finally {
