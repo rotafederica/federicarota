@@ -98,8 +98,8 @@ federicarota/             ← root del repo GitHub (deploy Vercel da root)
 ~~Rimosso dal sito (Marzo 2026) su decisione della cliente. Tutti i riferimenti a Doctolib e `[LINK-DOCTOLIB]` sono stati eliminati dall'HTML.~~
 
 ### Google Analytics 4
-- Tag: `G-XXXXXXXXXX` — **da configurare post-lancio**
-- NON bloccare il sito per mancanza di GA4 — si aggiunge dopo il lancio
+- Tag: ~~`G-XXXXXXXXXX`~~ ✅ `G-WR55X0FHSX` — configurato Aprile 2026
+- Snippet inserito in tutti e 16 i file HTML pubblici (homepage, chi-sono, prenota, privacy, guide/index, 5 articoli guide, 6 specializzazioni)
 
 ### Google Maps embed
 - Usare embed statico (no API key, no cookie banner)
