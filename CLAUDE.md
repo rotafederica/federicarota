@@ -15,7 +15,7 @@
 |------|-------|
 | **Fase 1 (attuale)** | HTML/CSS/JS statico puro — nessun build tool, nessun framework |
 | **Fase 2** | Eleventy SSG (`.eleventy.js`) per gestione blog da file `.md` |
-| **Hosting target** | Vercel (deploy da GitHub, branch `main`) |
+| **Hosting target** | ~~Vercel~~ → **Netlify** (deploy da GitHub, branch `main`, repo pubblico `rotafederica/federicarota`) |
 
 **Regola JS:** JS minimale. Nessun framework (no React, no Vue). Solo vanilla JS per: menu mobile hamburger, form EmailJS AJAX, lazy load immagini.
 
@@ -24,15 +24,15 @@
 ## Struttura cartelle (root del repository)
 
 ```
-federicarota/             ← root del repo GitHub (deploy Vercel da root)
+federicarota/             ← root del repo GitHub (deploy Netlify da root)
 ├── _includes/           ← componenti riutilizzabili (header, footer, meta, cta)
-├── specializzazioni/    ← 5 landing page SEO per patologia
+├── specializzazioni/    ← 6 landing page SEO per patologia
 ├── guide/               ← blog / articoli SEO (indice + articoli)
 ├── assets/
 │   ├── css/             ← main.css · components.css · pages.css
 │   ├── js/              ← main.js
 │   ├── img/
-│   │   ├── dottoressa/       ← ritratto-01.webp
+│   │   ├── dottoressa/       ← hero.webp (sostituisce ritratto-01.webp — Aprile 2026)
 │   │   ├── studio/           ← sala-attesa.webp
 │   │   ├── diagnostica/      ← strumenti-diagnostici.webp
 │   │   ├── specializzazioni/ ← prick-test-bambino · patch-test-* · prick-test-avambraccio · visita-bambina (.webp)
@@ -88,18 +88,28 @@ federicarota/             ← root del repo GitHub (deploy Vercel da root)
 
 ### EmailJS (form contatto AJAX)
 - Script CDN: `https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js`
-- Init: `emailjs.init("[PUBLIC-KEY]")` — **PUBLIC-KEY da fornire dalla cliente**
-- Service ID e Template ID: configurati su emailjs.com dall'utente
+- Init: `emailjs.init({ publicKey: 'EayY0zQOVDw6GtTgv' })` ✅ configurato Aprile 2026
+- Service ID: `service_834y28s` · Template ID: `template_bovgj6n` ✅
+- SMTP: Libero (`federota@libero.it`) — testato e funzionante
 - Piano gratuito: 200 email/mese (sufficiente per studio privato)
+- Validazione lato JS: nome, telefono e privacy policy obbligatori (novalidate sul form)
 - I dati NON vengono archiviati su server terzi
-- File da aggiornare: `_includes/cta.html`
 
 ### Doctolib
 ~~Rimosso dal sito (Marzo 2026) su decisione della cliente. Tutti i riferimenti a Doctolib e `[LINK-DOCTOLIB]` sono stati eliminati dall'HTML.~~
 
 ### Google Analytics 4
-- Tag: ~~`G-XXXXXXXXXX`~~ ✅ `G-WR55X0FHSX` — configurato Aprile 2026
-- Snippet inserito in tutti e 16 i file HTML pubblici (homepage, chi-sono, prenota, privacy, guide/index, 5 articoli guide, 6 specializzazioni)
+- Tag: ✅ `G-WR55X0FHSX` — configurato Aprile 2026
+- Snippet inserito in tutti e 17 i file HTML pubblici (homepage, chi-sono, prenota, privacy, guide/index, 5 articoli guide, 6 specializzazioni)
+- Modalità **cookieless** attiva — nessun cookie scritto nel browser:
+  ```js
+  gtag('config', 'G-WR55X0FHSX', {
+    anonymize_ip: true,
+    storage: 'none',
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+  ```
 
 ### Google Maps embed
 - Usare embed statico (no API key, no cookie banner)
@@ -129,7 +139,7 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 
 | File sorgente | Destinazione semantica v2.0 | Uso |
 |---------------|---------------------------|-----|
-| `Docs/img-01.webp` | `assets/img/dottoressa/ritratto-01.webp` | Ritratto hero homepage + chi-sono |
+| `Docs/img-01.webp` | ~~`assets/img/dottoressa/ritratto-01.webp`~~ → `assets/img/dottoressa/hero.webp` | Ritratto hero homepage + chi-sono |
 | `Docs/img-02.webp` | `assets/img/studio/sala-attesa.webp` | Foto studio/reception |
 | `Docs/img-03.webp` | `assets/img/diagnostica/strumenti-diagnostici.webp` | Strumentazione diagnostica |
 | `Docs/img-04.webp` | `assets/img/specializzazioni/prick-test-avambraccio.webp` | Prick test adulto |
@@ -160,10 +170,18 @@ Questi valori sono placeholder nel codice — la cliente li sostituirà prima de
 - [x] **Fix UI** (Marzo 2026): header CTA unificato `tel:+39 339 1565344` su tutte le pagine (guide, chi-sono, privacy) · H1 guide/index ridotto a `clamp(1.6rem, 3vw, 2.4rem)` · stili tipografia privacy ottimizzati · `pages.css` `.article-body h2` margin-top portato a `3.5rem` e `h3` a `var(--space-10)` per separazione visiva tra sezioni articolo
 - [x] **Aggiornamento FAQ** (Marzo 2026): `index.html` — 6 FAQ cliniche con check-list SVG (quando serve visita, durata, dolore test, antistaminici, digiuno, immunoterapia) · `specializzazioni/allergie-bambini-roma/` — 7 FAQ pediatriche con check-list SVG · `components.css` max-height FAQ da 400px a 800px · `pages.css` regole `.faq-answer .check-list__item` e `.faq-answer__inner` per layout pulito dentro accordion
 
+- [x] **Aggiornamenti Aprile 2026:**
+  - Nuova 6ª landing: `specializzazioni/orticaria-angioedema-roma/` · dropdown nav aggiornato su tutti i file
+  - Foto hero sostituita: `hero.webp` su homepage e chi-sono
+  - EmailJS operativo: credenziali reali, SMTP Libero testato, validazione JS campi obbligatori
+  - GA4 cookieless: `storage: 'none'`, `anonymize_ip: true` — nessun cookie, nessun banner necessario
+  - Hosting migrato da Vercel a **Netlify** (repo pubblico `rotafederica/federicarota`)
+  - Orari studio inseriti: `Martedì e Giovedì 14:30–19:00` su tutte le pagine
+
 ## Milestone successive
 
 - [ ] **Milestone 4:** `robots.txt` · `sitemap.xml` · `schema-medico.json` · `.eleventy.js` (Fase 2)
-- [ ] **Milestone 5:** Google Analytics 4 · Google Search Console · EmailJS configurazione reale
+- [ ] **Milestone 5:** ~~EmailJS~~ ✅ · ~~GA4~~ ✅ · Google Search Console
 
 ---
 
